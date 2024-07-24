@@ -10,37 +10,41 @@
 
 <body class="bg-gray-100 flex items-center justify-center h-screen">
     <div class="relative">
-        <div class="absolute inset-0 bg-red-400 p-6 rounded-lg shadow-md">
-        </div>
-        <div class=" bg-emerald-600 p-6 rounded-lg shadow-md max-w-sm">
-            <div class="mb-4">
-                <input type="text" id="display" class="w-full p-4 text-3xl text-right border border-gray-300 rounded" readonly>
+        <!-- <div class="absolute inset-0 bg-red-400 p-6 rounded-lg shadow-md">
+        </div> -->
+        <form action="">
+            <div class=" bg-emerald-600 p-6 rounded-lg shadow-md max-w-sm border-4 border-gray-800">
+                <div class="mb-4 ">
+                    <input type="text" title="display" id="display" class="w-full p-4 text-3xl text-right border-4 border-gray-800 outline-none rounded-lg "  readonly>
+                </div>
+                <div class="grid grid-cols-4 gap-2">
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="1" onclick="ajouter('1')">
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="2" onclick="ajouter('2')">
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="3" onclick="ajouter('3')">
+                    <input type="button" class="bg-gray-700 text-white py-4 rounded cursor-pointer hover:bg-gray-900" value="+" onclick="ajouter('+')">
+
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="4" onclick="ajouter('4')">
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="5" onclick="ajouter('5')">
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="6" onclick="ajouter('6')">
+                    <input type="button" class="bg-gray-700 text-white py-4 rounded cursor-pointer hover:bg-gray-900" value="-" onclick="ajouter('-')">
+
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="7" onclick="ajouter('7')">
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="8" onclick="ajouter('8')">
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="9" onclick="ajouter('9')">
+                    <input type="button" class="bg-gray-700 text-white py-4 rounded cursor-pointer hover:bg-gray-900" value="*" onclick="ajouter('*')">
+
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="." onclick="ajouter('.')">
+                    <input type="button" class="bg-gray-200 py-4 rounded cursor-pointer hover:bg-gray-400" value="0" onclick="ajouter('0')">
+                    <input type="button" class="bg-blue-700 text-white py-4 rounded cursor-pointer hover:bg-blue-800" value="=" onclick="check()">
+                    <input type="button" class="bg-gray-700 text-white py-4 rounded cursor-pointer hover:bg-gray-900" value="/" onclick="ajouter('/')">
+
+                    <input type="button" class="bg-red-600 text-white py-4 rounded col-span-full cursor-pointer hover:bg-red-700" value="C" onclick="supprimer()">
+                </div>
             </div>
-            <div class="grid grid-cols-4 gap-2">
-                <button class="bg-gray-200 py-4 rounded">1</button>
-                <button class="bg-gray-200 py-4 rounded">2</button>
-                <button class="bg-gray-200 py-4 rounded">3</button>
-                <button class="bg-gray-700 text-white py-4 rounded">+</button>
+        </form>
 
-                <button class="bg-gray-200 py-4 rounded">4</button>
-                <button class="bg-gray-200 py-4 rounded">5</button>
-                <button class="bg-gray-200 py-4 rounded">6</button>
-                <button class="bg-gray-700 text-white py-4 rounded">−</button>
-
-                <button class="bg-gray-200 py-4 rounded">7</button>
-                <button class="bg-gray-200 py-4 rounded">8</button>
-                <button class="bg-gray-200 py-4 rounded">9</button>
-                <button class="bg-gray-700 text-white py-4 rounded">×</button>
-
-                <button class="bg-gray-200 py-4 rounded">.</button>
-                <button class="bg-gray-200 py-4 rounded">0</button>
-                <button class="bg-blue-700 text-white py-4 rounded">=</button>
-                <button class="bg-gray-700 text-white py-4 rounded">/</button>
-
-                <button class="bg-red-600 text-white py-4 rounded col-span-full">C</button>
-            </div>
-        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
